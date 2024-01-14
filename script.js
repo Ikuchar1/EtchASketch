@@ -25,23 +25,21 @@ function createGrid(width) {
 
 }
 
-//button event listener to create new grid with number of boxes given
-
 function changeColor(item) {
     item.style.backgroundColor = "black";
 }
 
 const button = document.querySelector("#btn");
 
-button.addEventListener("click", function(){
+button.addEventListener("click", function () {
 
     reset();
 
 });
 
-function reset(){
+function reset() {
     const width = prompt("Enter a width for the grid");
-    if(width > 100 || width <1){
+    if (width > 100 || width < 1) {
         reset();
     }
     createGrid(width);
